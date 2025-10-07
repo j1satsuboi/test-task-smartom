@@ -5,13 +5,13 @@
 1. Скачайте проект с GitHub:
 
 ```bash
-git clone https://github.com/ваш-логин/ваш-репозиторий.git
+git clone https://github.com/j1satsuboi/test-task-smartom.git
 ```
 
 2. Перейдите в папку проекта:
 
 ```bash
-cd папка-проекта
+cd test-task-smartom
 ```
 
 3. Установите зависимости:
