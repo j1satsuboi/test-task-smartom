@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-3xl: 120rem;
+  --font-mts-compact: "MTS Compact", sans-serif;
+  --font-mts-wide: "MTS Wide", sans-serif;
+  --animate-fadein: fadein 1s ease-out forwards;
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100;
+    }
+  }
+}
+
+@utility no-scrollbar {
+  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* MTS Compact */
+@font-face {
+  font-family: "MTS Compact";
+  src: url("/fonts/Compact/MTSCompact-Regular.woff2") format("woff2"),
+    url("/fonts/Compact/MTSCompact-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MTS Compact";
+  src: url("/fonts/Compact/MTSCompact-Medium.woff2") format("woff2"),
+    url("/fonts/Compact/MTSCompact-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MTS Compact";
+  src: url("/fonts/Compact/MTSCompact-Bold.woff2") format("woff2"),
+    url("/fonts/Compact/MTSCompact-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MTS Compact";
+  src: url("/fonts/Compact/MTSCompact-Black.woff2") format("woff2"),
+    url("/fonts/Compact/MTSCompact-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* MTS Wide */
+@font-face {
+  font-family: "MTS Wide";
+  src: url("/fonts/Wide/MTSWide-Light.woff2") format("woff2"),
+    url("/fonts/Wide/MTSWide-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MTS Wide";
+  src: url("/fonts/Wide/MTSWide-Regular.woff2") format("woff2"),
+    url("/fonts/Wide/MTSWide-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MTS Wide";
+  src: url("/fonts/Wide/MTSWide-Medium.woff2") format("woff2"),
+    url("/fonts/Wide/MTSWide-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MTS Wide";
+  src: url("/fonts/Wide/MTSWide-Bold.woff2") format("woff2"),
+    url("/fonts/Wide/MTSWide-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MTS Wide";
+  src: url("/fonts/Wide/MTSWide-Black.woff2") format("woff2"),
+    url("/fonts/Wide/MTSWide-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
